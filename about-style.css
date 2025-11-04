@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/stranica/slike/about/about-embedded.jpg');
+    background-size: cover;
+    color: white;
+}
+.about{
+    height: 300vh;
+    display: flex;
+}
+.about-title{
+    background: linear-gradient(#141e30, #243b55);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0!important;
+}
+.about-title img{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+      }
+
+.about-pages{
+    width: 50%;
+}
+
+.about-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.about-pages div > p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about-pages img {
+    border-radius: 20px;
+    padding: 1px;
+    width: 400px;
+  }  
+
+.about-pages div:nth-child(1){
+    background-color: #113f4d;
+
+}
+.about-pages div:nth-child(2){
+    background-color: #231c49;
+    
+}
+.about-pages div:nth-child(3){
+    background-color: #14142a;
+    
+}
+footer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}

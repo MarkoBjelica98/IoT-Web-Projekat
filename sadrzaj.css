@@ -1,0 +1,179 @@
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: #000 url('slike/loading/loading.gif') no-repeat center center;
+}
+
+.kontenjer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.lijevaStrana {
+    display: flex;
+}
+.nav > .lijevaStrana > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.navLinkovi {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.navLinkovi a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.navLinkovi:hover {
+    border-bottom: 1px solid cyan;
+}
+.navLinkovi a:hover {
+    color: cyan;
+}
+
+.aktivni-link {
+    border-bottom: 1px solid cyan;
+}
+.aktivni-link a{
+    color: cyan !important;
+}
+
+.sadrzaj {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.jedan-sadrzaj {
+    position: relative;
+}
+.pozadina{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tekst-pozadine {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.tekst-pozadine .title h4{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+
+}
+
+.tekst-pozadine:hover .title h4{
+    font-weight: 600;
+    color: cyan;
+}
+
+.remove-underline{
+    text-decoration: none;
+}
+
+.img-potamljeno {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.dva-reda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profilna-slika img {
+    width: 100%;
+}
+.sadrzaj-profila {
+   padding: 30px; 
+}
+
+.sadrzaj-profila h1{
+    color: cyan;
+}
+
+.brend{
+    color: cyan;
+}
+.dva-reda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profilna-slika img {
+    width: 100%;
+}
+.sadrzaj-profila {
+   padding: 30px; 
+}
+
+.sadrzaj-profila h1{
+    color: cyan;
+}
+
+/* Social Medaia */
+.nav-links-social ul{
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    margin: 0;
+}
+.linkedin{
+  /*  background: gray; */
+    width: 50px;
+    height: 50px;
+    margin: 0 5px; 
+}
+.insta{
+   /* background: gray; */
+    width: 50px;
+    height: 50px;
+    margin: 0 5px; 
+}
+.fb{
+    /*background: gray;*/
+    width: 50px;
+    height: 50px;
+    margin: 0 5px; 
+}
+
+/*Sfera*/
+.sfera{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+    height: 150vh;
+}
+.sfera > p {
+    color: white;
+}
